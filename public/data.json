@@ -1,0 +1,26 @@
+[
+	{
+	  "id": "1",
+	  "image": "http://localhost:3000/basketbolnye-krossovki-nike.jpg",
+	  "name": "Product One",
+	  "description": "ODSY-1000 low-top sneakers",
+	  "price": 99.00,
+	  "discount": 38.58
+	},
+	{
+	  "id": "2",
+	  "image": "http://localhost:3000/spong.jpg",
+	  "name": "Product Two",
+	  "description": "Graphic logo print T-shirt",
+	  "price": 15.00,
+	  "discount": 0
+	},
+	{
+		"id": "3",
+		"image": "http://localhost:3000/95bd8j31c.jpg",
+		"name": "Product Three",
+		"description": "Graphic logo print T-shirt",
+		"price": 55.00,
+		"discount": 10.00
+	}
+]

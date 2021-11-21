@@ -1,0 +1,38 @@
+@import "mixin";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: none !important;
+}
+
+html {
+  overflow: auto;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @include font-regular;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  padding: 15px;
+  @include flexbox-center;
+
+  @media (min-width: 992px) {
+    height: 100%;
+  }
+}
+
+.btn-console {
+	position: absolute;
+	top: 70px;
+	right: 20px;
+}

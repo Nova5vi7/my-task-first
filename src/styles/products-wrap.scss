@@ -1,0 +1,9 @@
+@import "mixin";
+
+.products-wrap {
+	height: 100%;
+	@include flexbox;
+	@include justify-content-center;
+	@include flex-wrap-wrap;
+	margin: 0 -15px;
+}
