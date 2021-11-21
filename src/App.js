@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import ProductsWrap from "./containers/ProductsWrap";
-import { Context } from "./Context";
+import { Context } from "./context/Context";
 import "./styles/common.scss"
 
 

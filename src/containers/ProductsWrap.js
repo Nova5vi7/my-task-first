@@ -1,7 +1,7 @@
 import {useState, useContext, useEffect} from "react";
 import getProducts from "../services/get-products";
 import Product from "../components/Product";
-import { Context } from "../Context";
+import { Context } from "../context/Context";
 import '../styles/products-wrap.scss'
 
 const ProductsWrap = () => {
