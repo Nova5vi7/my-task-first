@@ -3,9 +3,13 @@ import Context from "../context/Context";
 import Button from "./Button";
 import normalizeData from "../helpers/normalizeData";
 
-const CartItem = ({productData}) => {
-	const {id, image, name, description, price, discount} = productData;
-	const {removeFromCart} = useContext(Context);
+const CartItem = ({productId}) => {
+	const {productsData, removeFromCart} = useContext(Context);
+
+	const productData = productsData.filter((product) => product.id === productId);
+
+	const {id, image, name, description, price, discount} = productData[0];
+	
 
 	const priceData = normalizeData(price);
 	const discountData = normalizeData(discount);
@@ -22,7 +26,7 @@ const CartItem = ({productData}) => {
 		</div>
 
 		<Button setClick={removeFromCart} id={id}>
-			Remove to cart
+			Remove from cart
 		</Button>
 	  </div>
 	);

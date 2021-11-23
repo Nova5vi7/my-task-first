@@ -14,7 +14,7 @@ const Product = ({productData}) => {
 
 	const classNameDiscount = classNames(['product-discount', {"visible": discount, "hidden": !discount}]);
 
-	const productInCart = Boolean(cartData.find((product) => product.id === id));
+	const productInCart = Boolean(cartData.find((productId) => productId === id));
 
 	return (
 	  <div className="product">
